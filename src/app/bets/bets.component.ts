@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../services/api-controller.service';
 
 @Component({
   selector: 'bets',
@@ -9,7 +10,7 @@ export class BetsComponent {
     data1: any;
     data2: any;
     counter: boolean = false;
-    constructor() {
+    constructor(private api: ApiService) {
         this.data = {
             labels: ['A','B','C'],
             datasets: [
@@ -27,6 +28,7 @@ export class BetsComponent {
                     ]
                 }]    
             };
+        console.log(api.getBetsPerMonth());
     }
 
     show(event){

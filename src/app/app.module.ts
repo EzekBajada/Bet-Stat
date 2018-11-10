@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TotalBarComponent } from './total-bar/total-bar.component'
 import { BetsComponent } from './bets/bets.component'
 
+import {ApiService} from './services/api-controller.service';
 const appRoutes: Routes = [
   { path: 'home', component: TotalBarComponent },
   { path: 'bets', component: BetsComponent },
@@ -23,6 +24,9 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     ChartModule
+  ],
+  providers: [
+    ApiService
   ],
   bootstrap: [AppComponent]
 })
