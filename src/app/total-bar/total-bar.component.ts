@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: 'total-bar.component.html'
 })
 export class TotalBarComponent {
-  title = 'app';
 }
