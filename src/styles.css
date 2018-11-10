@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.box{
+    background-color: lightseagreen;
+    color: blanchedalmond;
+    border-radius: 13px !important;   
+    margin: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px ;
+}
+#buttuna{
+    background-color: white;
+    padding: 0px;
+}
+
+.btn{
+    background-color: lightseagreen;
+    color:blanchedalmond;
+    border-radius: 13px !important;   
+
+}
